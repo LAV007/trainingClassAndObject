@@ -44,7 +44,7 @@ public class Bus extends Car {
     
     
     
-    public Bus(Car bus, Emploees driver, String passengers, String number) {
+    public Bus(String number, Emploees driver, String passengers) {
         super(number);
         this.bus = bus;
         this.driver = driver;
@@ -53,7 +53,7 @@ public class Bus extends Car {
 
     @Override
     public String toString() {
-        return "bus " + bus + ", driver is " + driver + ", ammount of passangers is " + passengers;
+        return "bus " + getNumber() + ", driver is " + driver + ", ammount of passangers is " + passengers;
     }
     
 }
